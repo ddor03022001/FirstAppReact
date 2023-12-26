@@ -45,9 +45,10 @@
         "phonenumber": "Phone number",
         "address": "Address",
         "gender": "Gender",
-        "role": "Role id",
+        "role": "Role",
         "position": "Position",
         "image": "Image",
-        "save": "Save"
+        "save": "Save",
+        "save-image": "Save image"
     }
 }

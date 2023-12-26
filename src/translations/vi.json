@@ -49,8 +49,6 @@
         "position": "Chức danh",
         "image": "Ảnh đại diện",
         "save": "Lưu",
-        "male": "Male",
-        "female": "Female",
-        "other": "Other"
+        "save-image": "Tải ảnh"
     }
 }
