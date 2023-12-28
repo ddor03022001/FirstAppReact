@@ -48,7 +48,12 @@
         "role": "Vai trò",
         "position": "Chức danh",
         "image": "Ảnh đại diện",
-        "save": "Lưu",
+        "save": "Lưu người dùng",
+        "edit": "Lưu thay đổi",
         "save-image": "Tải ảnh"
+    },
+    "home-page": {
+        "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
+        "more-infor": "Xem thêm"
     }
 }
