@@ -54,6 +54,9 @@
     },
     "home-page": {
         "out-standing-doctor": "Last week's featured doctor",
+        "medical-facility": "Outstanding medical facilities",
+        "specialty": "Popular specialties",
+        "handbook": "Handbook",
         "more-infor": "More infor"
     }
 }

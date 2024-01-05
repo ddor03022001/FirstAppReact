@@ -54,6 +54,9 @@
     },
     "home-page": {
         "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
+        "medical-facility": "Cơ sở y tế nổi bật",
+        "specialty": "Chuyên khoa phổ biến",
+        "handbook": "Cẩm nang",
         "more-infor": "Xem thêm"
     }
 }

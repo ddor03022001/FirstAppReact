@@ -12,8 +12,12 @@ class HandBook extends Component {
             <div className='section-share section-handbook'>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span className='title-section'>Cẩm nang</span>
-                        <button className='btn-section'>xem thêm</button>
+                        <span className='title-section'>
+                            <FormattedMessage id={"home-page.handbook"} />
+                        </span>
+                        <button className='btn-section'>
+                            <FormattedMessage id={"home-page.more-infor"} />
+                        </button>
                     </div>
                     <div className='section-body'>
                         <Slider {...this.props.settings}>
