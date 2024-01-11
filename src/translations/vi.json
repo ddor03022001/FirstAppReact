@@ -34,6 +34,9 @@
             "manage-specialty": "Quản lý chuyên khoa",
             "handbook": "Cẩm nang",
             "manage-handbook": "Quản lý cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lý kế hoạch khám bệnh"
         }
     },
     "manage-user": {
@@ -58,5 +61,18 @@
         "specialty": "Chuyên khoa phổ biến",
         "handbook": "Cẩm nang",
         "more-infor": "Xem thêm"
+    },
+    "manage-doctor": {
+        "create-doctor-information": "Tạo thêm thông tin bác sĩ",
+        "choose-doctor": "Chọn bác sĩ",
+        "introducte_information": "Thông tin giới thiệu",
+        "save-information": "Lưu thông tin",
+        "create-information": "Tạo thông tin"
+    },
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+        "choose-doctor": "Chọn bác sĩ",
+        "choose-day": "Chọn ngày",
+        "save-information": "Lưu thông tin"
     }
 }

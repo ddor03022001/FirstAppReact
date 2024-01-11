@@ -34,6 +34,9 @@
             "manage-specialty": "Manage specialty",
             "handbook": "Handbook",
             "manage-handbook": "Manage handbooks"
+        },
+        "doctor": {
+            "manage-schedule": "Manage Doctor's schedule"
         }
     },
     "manage-user": {
@@ -58,5 +61,18 @@
         "specialty": "Popular specialties",
         "handbook": "Handbook",
         "more-infor": "More infor"
+    },
+    "manage-doctor": {
+        "create-doctor-information": "Create doctor information",
+        "choose-doctor": "Choose doctor",
+        "introducte_information": "Introducte information",
+        "save-information": "Save information",
+        "create-information": "Create information"
+    },
+    "manage-schedule": {
+        "title": "Manage doctor's medical examination plans",
+        "choose-doctor": "Choose doctor",
+        "choose-day": "Choose day",
+        "save-information": "Save information"
     }
 }
