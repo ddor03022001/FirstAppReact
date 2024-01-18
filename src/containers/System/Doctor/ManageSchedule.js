@@ -90,11 +90,11 @@ class ManageSchedule extends Component {
         let { rangeTime, selectedDoctor, currentDate } = this.state;
         let result = [];
         if (!currentDate) {
-            toast.error("Invalid date!")
+            toast.error("Invalid day!")
             return;
         }
         if (selectedDoctor && _.isEmpty(selectedDoctor)) {
-            toast.error("Invalid date!")
+            toast.error("Invalid day!")
             return;
         }
         // let formattedDate = moment(currentDate).format(dateFormat.SEND_TO_SERVER);
@@ -121,7 +121,12 @@ class ManageSchedule extends Component {
             doctorId: selectedDoctor.value,
             formattedDate: formattedDate
         })
-        console.log("check res: ", res)
+
+        if (res && res.errCode === 0) {
+            toast.success("Save infor time succeed!")
+        } else {
+            toast.error("Error infor time succeed!")
+        }
     }
     render() {
         let { rangeTime } = this.state;
@@ -147,7 +152,7 @@ class ManageSchedule extends Component {
                             <DatePicker
                                 className="form-control"
                                 value={this.state.currentDate}
-                                minDate={new Date()}
+                                minDate={minDate}
                                 onChange={this.handleOnChangeDatePicker}
                             />
                         </div>

@@ -25,25 +25,45 @@
         }
 
         .time-content {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            .time-content-btn {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
 
-            button {
-                min-width: 120px;
-                border-radius: 3px;
-                padding: 8px 10px;
-                border: none;
-                outline: none;
-                background-color: orange;
-                font-weight: 600;
-                color: #333;
+                button {
+                    border-radius: 3px;
+                    padding: 8px 10px;
+                    border: none;
+                    outline: none;
+                    background-color: orange;
+                    font-weight: 600;
+                    color: #333;
 
-                &:hover {
-                    background-color: #45c3d2;
-                    color: white;
+                    &:hover {
+                        background-color: #45c3d2;
+                        color: white;
+                    }
+                }
+
+                .btn-vi {
+                    min-width: 120px;
+                }
+
+                .btn-en {
+                    min-width: 170px;
+                }
+
+                .no-schedule {
+                    font-style: italic;
+                    font-weight: 500;
+                    font-size: 15px;
                 }
             }
+
+            .book-free {
+                margin-top: 10px;
+            }
+
         }
     }
 }
