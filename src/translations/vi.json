@@ -67,7 +67,13 @@
         "choose-doctor": "Chọn bác sĩ",
         "introducte_information": "Thông tin giới thiệu",
         "save-information": "Lưu thông tin",
-        "create-information": "Tạo thông tin"
+        "create-information": "Tạo thông tin",
+        "price": "Giá khám bệnh",
+        "payment": "Phương thức thanh toán",
+        "province": "Tỉnh thành",
+        "name-clinic": "Tên phòng khám",
+        "address-clinic": "Địa chỉ phòng khám",
+        "note": "Ghi chú"
     },
     "manage-schedule": {
         "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
