@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import HomeHeader from '../../HomePage/HomeHeader';
 import DoctorSchedule from './DoctorSchedule';
+import DoctorExtraInfor from './DoctorExtraInfor';
 import './DetailDoctor.scss';
 import { getDetailInforDoctor } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
@@ -80,7 +81,11 @@ class DetailDoctor extends Component {
                                 doctorIdFromParent={currentDoctorId}
                             />
                         </div>
-                        <div className='content-right'></div>
+                        <div className='content-right'>
+                            <DoctorExtraInfor
+                                doctorIdFromParent={currentDoctorId}
+                            />
+                        </div>
                     </div>
                     <div className='detail-infor-doctor'>
                         {
