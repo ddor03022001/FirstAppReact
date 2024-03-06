@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import './ManageSchedule.scss';
 import * as actions from "../../../store/actions";
-import { LANGUAGES, dateFormat } from '../../../utils';
+import { LANGUAGES } from '../../../utils';
 import { FormattedMessage } from 'react-intl';
 import Select from 'react-select';
 import DatePicker from '../../../components/Input/DatePicker';

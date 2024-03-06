@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import './DoctorSchedule.scss';
-import localization from 'moment/locale/vi';
 import { FormattedMessage } from 'react-intl';
 import { getScheduleDoctorByDate } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
@@ -98,7 +97,6 @@ class DoctorSchedule extends Component {
     render() {
         let { allDays, allAvailableTimes } = this.state;
         let { language } = this.props;
-        console.log("check time: ", this.state.allAvailableTimes)
         return (
             <div className='doctor-schedule-container'>
                 <div className='all-schedule'>

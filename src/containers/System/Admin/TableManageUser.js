@@ -1,5 +1,4 @@
-import React, { Component, useCallback } from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Component } from 'react';
 import * as actions from "../../../store/actions";
 import { connect } from 'react-redux';
 import './TableManageUser.scss';
@@ -17,7 +16,7 @@ const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 // Finish!
 function handleEditorChange({ html, text }) {
-  console.log('handleEditorChange', html, text);
+    console.log('handleEditorChange', html, text);
 }
 
 class TableManageUser extends Component {

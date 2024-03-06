@@ -1,5 +1,4 @@
-import React, { Component, useCallback } from 'react';
-import { FormattedMessage } from 'react-intl';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './UserManage.scss';
 import { getAllUsers, createNewUserService, deleteUserService, editUserService } from '../../services/userService';
