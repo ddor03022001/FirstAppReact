@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import './DoctorSchedule.scss';
+import localization from 'moment/locale/vi';
 import { FormattedMessage } from 'react-intl';
 import { getScheduleDoctorByDate } from '../../../services/userService';
 import BookingModal from './Modal/BookingModal';
@@ -59,7 +60,7 @@ class DoctorSchedule extends Component {
                 object.value = currentDate.startOf('day').valueOf();
 
             } else {
-                object.label = i === 0 ? 'Today' : currentDate.locale('en').format('dddd - DD/MM');
+                object.label = i === 0 ? 'Today' : currentDate.locale('en').format('ddd - MM/DD');
                 object.value = currentDate.startOf('day').valueOf();
             }
             allDays.push(object);
