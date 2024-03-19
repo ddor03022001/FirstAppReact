@@ -28,8 +28,8 @@ class BookingModal extends Component {
             selectedGender: '',
             genders: '',
             doctorId: '',
-            timeType: ''
-
+            timeType: '',
+            loading: 0
         }
     }
 
@@ -124,6 +124,10 @@ class BookingModal extends Component {
     }
 
     handleConfirmBooking = async () => {
+
+        this.setState({
+            loading: 1
+        })
         //validate input
         let date = new Date(this.state.birthday).getTime();
         let timeString = this.buildTimeBooking(this.props.dataTime);
@@ -145,12 +149,19 @@ class BookingModal extends Component {
         if (res && res.errCode === 0) {
             toast.success("Booking a new appointment succeed!")
             this.props.closeBookingModal();
+            this.setState({
+                loading: 0
+            })
         } else {
             toast.error("Booking a new appointment error!")
+            this.setState({
+                loading: 0
+            })
         }
     }
 
     render() {
+        let { loading } = this.state;
         let { isOpenModal, closeBookingModal, dataTime } = this.props;
         let doctorId = '';
         if (dataTime && !_.isEmpty(dataTime)) {
@@ -238,7 +249,13 @@ class BookingModal extends Component {
                     <div className='booking-modal-footer'>
                         <button className='btn-booking-confirm'
                             onClick={() => this.handleConfirmBooking()}
-                        >Xác nhận</button>
+                        >
+                            {loading === 0 ?
+                                <div>Xác nhận</div> :
+                                <div>Loading ...
+                                </div>
+                            }
+                        </button>
                         <button className='btn-booking-cancel'
                             onClick={closeBookingModal}
                         >Hủy</button>
