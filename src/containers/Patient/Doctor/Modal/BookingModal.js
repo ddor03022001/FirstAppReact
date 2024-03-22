@@ -250,11 +250,7 @@ class BookingModal extends Component {
                         <button className='btn-booking-confirm'
                             onClick={() => this.handleConfirmBooking()}
                         >
-                            {loading === 0 ?
-                                <div>Xác nhận</div> :
-                                <div>Loading ...
-                                </div>
-                            }
+                            {loading === 0 ? "Xác nhận" : <i className="fas fa-spinner fa-spin"></i>}
                         </button>
                         <button className='btn-booking-cancel'
                             onClick={closeBookingModal}
