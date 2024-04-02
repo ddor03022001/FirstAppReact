@@ -65,6 +65,8 @@
     "manage-doctor": {
         "create-doctor-information": "Create doctor information",
         "choose-doctor": "Choose doctor",
+        "choose-specialty": "Choose specialty",
+        "choose-clinic": "Choose clinic",
         "introducte_information": "Introducte information",
         "save-information": "Save information",
         "create-information": "Create information",

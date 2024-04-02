@@ -65,6 +65,8 @@
     "manage-doctor": {
         "create-doctor-information": "Tạo thêm thông tin bác sĩ",
         "choose-doctor": "Chọn bác sĩ",
+        "choose-specialty": "Chọn chuyên khoa",
+        "choose-clinic": "Chọn phòng khám",
         "introducte_information": "Thông tin giới thiệu",
         "save-information": "Lưu thông tin",
         "create-information": "Tạo thông tin",
