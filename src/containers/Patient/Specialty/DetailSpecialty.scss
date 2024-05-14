@@ -1,49 +1,66 @@
 .detail-specialty-container {
+    .description-specialty {
+        background-color: white !important;
+        padding: 10px;
+        margin: 15px 0;
+    }
 
     .detai-specialty-body {
-        margin: 0 100px;
+        padding: 0 100px;
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+    }
 
-        .description-specialty {
-            padding: 5px 5px;
+    .search-sp-doctor {
+        select {
+            height: 30px;
+            padding: 5px 8px;
+            border: none;
+            outline: none;
+            border: 3px;
+            cursor: pointer;
+        }
+    }
+
+    .each-doctor {
+        display: flex;
+        width: 100%;
+        min-height: 200px;
+        margin: 15px 0;
+        padding: 10px;
+
+        background-color: #fff;
+        box-shadow: 0 1px 6px #20212447;
+        border-radius: 8px;
+
+        .each-content-left {
+            width: 50%;
+            border-right: 1px solid #ddd;
+
+            .profile-doctor-container {
+                .down {
+                    padding: 5px;
+                }
+            }
         }
 
-        .search-sp-doctor {}
-
-        .each-doctor {
-            display: flex;
-            width: 100%;
-            min-height: 200px;
-            margin: 15px 0;
+        .each-content-right {
+            width: 50%;
             padding: 10px;
 
-            background-color: #fff;
-            box-shadow: 0 1px 6px #20212447;
-            border-radius: 8px;
+            .schedule {}
 
-            .each-content-left {
-                padding: 5px 5px;
-                width: 50%;
-                border-right: 1px solid #ddd;
+            .extraInfor {
+                border-top: 1px solid #ddd;
+                margin-top: 10px;
+                padding-top: 10px;
 
-                .profile-doctor {}
-            }
-
-            .each-content-right {
-                width: 50%;
-                padding: 10px;
-
-                .schedule {}
-
-                .extraInfor {
-                    border-top: 1px solid #ddd;
-                    margin-top: 10px;
-                    padding-top: 10px;
-
-                    .doctor-extra-infor-container {
-                        padding-left: 0 !important;
-                    }
+                .doctor-extra-infor-container {
+                    padding-left: 0 !important;
                 }
             }
         }
     }
+
 }
