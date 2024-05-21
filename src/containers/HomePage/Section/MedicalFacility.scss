@@ -1,0 +1,40 @@
+// .medical-facility-child {
+//     cursor: pointer;
+
+//     .medical-facility-name {
+//         padding: 10px 0;
+//         text-align: center;
+
+//         &:hover {
+//             color: #45c3d2;
+//         }
+//     }
+// }
+.section-medical-facility {
+    .outer-bg {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+        cursor: pointer;
+
+        .customize-border {
+            background-color: #fff;
+            box-shadow: 0 1px 6px #20212447;
+            border-radius: 8px;
+            padding: 5px;
+
+            .medical-facility-name {
+                padding: 10px 0;
+                text-align: center;
+
+                &:hover {
+                    color: #45c3d2;
+                }
+            }
+        }
+    }
+}

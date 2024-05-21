@@ -51,13 +51,17 @@ class Specialty extends Component {
                                             key={index}
                                             onClick={() => this.handleViewDetailSpecialty(item)}
                                         >
-                                            <div
-                                                className='pg-imgage section-specialty'
-                                                style={{ backgroundImage: `url(${item.image})` }}
-                                            >
+                                            <div className='customize-border'>
+                                                <div className='outer-bg'>
+                                                    <div
+                                                        className='pg-imgage section-specialty'
+                                                        style={{ backgroundImage: `url(${item.image})` }}
+                                                    >
 
+                                                    </div>
+                                                </div>
+                                                <div className='specialty-name'>{item.name}</div>
                                             </div>
-                                            <div className='specialty-name'>{item.name}</div>
                                         </div>
                                     )
                                 })

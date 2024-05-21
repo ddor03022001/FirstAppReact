@@ -2,14 +2,36 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './MedicalFacility.scss';
 import { FormattedMessage } from 'react-intl';
-
+import { getAllClinic } from '../../../services/userService';
+import { withRouter } from 'react-router';
 import Slider from "react-slick";
 
 
 class MedicalFacility extends Component {
 
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataClinic: []
+        }
+    }
+    async componentDidMount() {
+        let res = await getAllClinic();
+        if (res && res.errCode === 0) {
+            this.setState({
+                dataClinic: res.data ? res.data : []
+            })
+        }
+    }
 
+    handleViewDetailClinic = (item) => {
+        if (this.props.history) {
+            this.props.history.push(`/detail-clinic/${item.id}`)
+        }
+    }
+
+    render() {
+        let { dataClinic } = this.state;
         return (
             <div className='section-share section-medical-facility'>
                 <div className='section-container'>
@@ -23,38 +45,30 @@ class MedicalFacility extends Component {
                     </div>
                     <div className='section-body'>
                         <Slider {...this.props.settings}>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 1</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 2</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 3</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 4</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 5</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 6</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 7</div>
-                            </div>
-                            <div className='section-customize'>
-                                <div className='pg-imgage section-medical-facility'></div>
-                                <div>Hệ thống y tế 8</div>
-                            </div>
+                            {dataClinic && dataClinic.length > 0 &&
+                                dataClinic.map((item, index) => {
+                                    return (
+                                        <div className='section-customize medical-facility-child'
+                                            key={index}
+                                            onClick={() => this.handleViewDetailClinic(item)}
+                                        >
+                                            <div className='customize-border'>
+                                                <div className='outer-bg'>
+                                                    <div
+                                                        className='pg-imgage section-medical-facility'
+                                                        style={{ backgroundImage: `url(${item.image})` }}
+                                                    >
+
+                                                    </div>
+                                                </div>
+                                                <div className='medical-facility-name'>{item.name}</div>
+                                            </div>
+
+
+                                        </div>
+                                    )
+                                })
+                            }
                         </Slider>
                     </div>
                 </div>
@@ -75,4 +89,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MedicalFacility);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MedicalFacility));

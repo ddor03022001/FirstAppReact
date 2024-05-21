@@ -81,26 +81,31 @@
     .section-body {
         .section-customize {
             .pg-imgage {
-                height: 150px;
-                width: 278px;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-color: #eee;
-
                 &.section-specialty {
-                    box-shadow: 0 1px 6px #20212447;
-                    border-radius: 8px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    width: 120px;
+                    height: 120px;
                     // background-image: url("../../assets/specialty/co-xuong-khop.jpg");
                 }
 
                 &.section-medical-facility {
-                    box-shadow: 0 1px 6px #20212447;
-                    border-radius: 8px;
-                    background-image: url("../../assets/specialty/noi-soi-tieu-hoa.jpg");
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    width: 120px;
+                    height: 120px;
+                    // background-image: url("../../assets/specialty/noi-soi-tieu-hoa.jpg");
                 }
 
                 &.section-outstanding-doctor {
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
                     // background-image: url("../../assets/specialty/anh-dai-dien-bs.jpg");
                     width: 120px;
                     height: 120px;
@@ -108,8 +113,12 @@
                 }
 
                 &.section-handbook {
-                    box-shadow: 0 1px 6px #20212447;
-                    border-radius: 8px;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    width: 120px;
+                    height: 120px;
                     background-image: url("../../assets/specialty/camnanghoidap.jpeg");
                 }
 
