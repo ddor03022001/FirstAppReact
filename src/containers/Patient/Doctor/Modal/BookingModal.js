@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import './BookingModal.scss';
-import { FormattedMessage } from 'react-intl';
 import { Modal } from 'reactstrap';
 import ProfileDoctor from '../ProfileDoctor';
 import DatePicker from '../../../../components/Input/DatePicker';
@@ -9,7 +8,7 @@ import * as actions from '../../../../store/actions';
 import { postPatientBookAppointment } from '../../../../services/userService';
 import Select from 'react-select';
 import _ from 'lodash';
-import { LANGUAGES, dateFormat } from '../../../../utils';
+import { LANGUAGES } from '../../../../utils';
 import { toast } from 'react-toastify';
 import moment from 'moment';
 

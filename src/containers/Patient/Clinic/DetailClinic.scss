@@ -10,6 +10,17 @@
         background: #eee;
         display: flex;
         flex-direction: column;
+
+        .name-clinic {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .infor_clinic {
+            margin-top: 10px;
+        }
     }
 
     .search-sp-doctor {
